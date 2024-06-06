@@ -14,6 +14,15 @@
        
     </head>
     <body class="antialiased">
+{{-- prova link --}}
+<nav>
+    <ul>
+      <li><a href="{{ route('home') }}">Home</a></li>
+      <li><a href="{{ route('about') }}">About</a></li>
+    </ul>
+  </nav>
+{{-- /prova link --}}
        <h2>HELLO WORLD</h2>
+       <h3>{{$username}} {{$greeting}}</h3>
     </body>
 </html>
