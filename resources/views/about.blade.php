@@ -8,14 +8,18 @@
 </head>
 <body>
 {{-- prova link --}}
-<nav>
-    <ul>
-      <li><a href="{{ route('home') }}">Home</a></li>
+{{-- <nav>
+    <ul> --}}
+        {{-- passiamo l'etichetta piuttosto che un url che potrebbe cambiare nel tempo (nella scelta del progetto) --}}
+      {{-- <li><a href="{{ route('home') }}">Home</a></li>
       <li><a href="{{ route('about') }}">About</a></li>
     </ul>
-  </nav>
+  </nav> --}}
 {{-- /prova link --}}
-  <h2>About </h2>
+@extends('layouts.app')
+@section('content')
+<h1>About</h1>
+@endsection
   
 </body>
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -15,14 +15,22 @@
     </head>
     <body class="antialiased">
 {{-- prova link --}}
-<nav>
+{{-- @include('partials.header') --}}
+{{-- <nav>
     <ul>
       <li><a href="{{ route('home') }}">Home</a></li>
       <li><a href="{{ route('about') }}">About</a></li>
     </ul>
-  </nav>
+  </nav> --}}
 {{-- /prova link --}}
-       <h2>HELLO WORLD</h2>
+       {{-- <h2>HELLO WORLD</h2>
        <h3>{{$username}} {{$greeting}}</h3>
     </body>
-</html>
+</html>  --}}
+
+{{-- estendo la pagina app.blade dove c'è il lyout che mi serve --}}
+@extends('layouts.app')
+@section('content')
+<h1>Home</h1>
+    
+@endsection
